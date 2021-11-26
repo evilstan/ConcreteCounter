@@ -135,6 +135,7 @@ public class MainActivity extends AppCompatActivity {
         resultText.setOnLongClickListener(new View.OnLongClickListener() { //clear all on TextView  Long Click
             @Override
             public boolean onLongClick(View v) {
+                totalVolume = 0;
                 constructionArray.clear();
                 adapter.notifyDataSetChanged();
                 resultText.setText("");
